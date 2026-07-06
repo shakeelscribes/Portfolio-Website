@@ -20,7 +20,7 @@ const footerLinks = {
     { label: "GitHub", href: "https://github.com/shakeelscribes" },
     { label: "Slack", href: "https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ" },
     { label: "Instagram", href: "https://instagram.com/shakeelscribes" },
-    { label: "Email", href: "mailto:ahamedshakeel2005@gmail.com" },
+    { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com" },
   ],
 };
 
@@ -95,7 +95,9 @@ export default function Footer() {
               </a>
               {/* Email */}
               <a
-                href="mailto:ahamedshakeel2005@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-icon"
                 aria-label="Email"
               >

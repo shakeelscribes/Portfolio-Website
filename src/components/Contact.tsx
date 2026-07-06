@@ -8,7 +8,7 @@ const contactLinks = [
   {
     label: "Email",
     value: "ahamedshakeel2005@gmail.com",
-    href: "mailto:ahamedshakeel2005@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="4" width="20" height="16" rx="2" />
