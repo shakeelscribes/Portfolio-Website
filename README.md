@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohamed Shakeel | Personal Portfolio
 
-## Getting Started
+A modern, highly interactive personal portfolio built from the ground up to showcase projects, skills, and professional experience.
 
-First, run the development server:
+![Portfolio Preview](./public/window.svg) <!-- Replace with an actual screenshot of the portfolio once deployed -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
+**[View Live Portfolio](https://portfolio-website-shakeelscribes.vercel.app/)** *(Add your Vercel URL here once deployed)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
+- **Next.js 14+ (App Router):** Fast, SEO-friendly, and optimized.
+- **Glassmorphism Design System:** Custom CSS variables for a sleek, modern, and translucent aesthetic.
+- **Fluid Typography:** Scales perfectly across all device sizes.
+- **Interactive Animations:** Uses Lenis for smooth scrolling, Framer Motion for scroll reveals, and highly customized CSS hover states.
+- **Terminal Stacking Cards:** Projects are presented in a unique, overlapping terminal-style UI.
+- **Direct Slack Integration:** Contact form submissions bypass email and are sent directly to a Slack workspace using webhooks.
+- **Supabase Backend:** Securely logs all incoming messages from the contact form.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- **Framework:** [Next.js](https://nextjs.org/) (React)
+- **Styling:** Custom CSS, CSS Modules
+- **Animations:** [Framer Motion](https://www.framer.com/motion/), [Lenis](https://lenis.studiofreight.com/) (Smooth Scrolling)
+- **Backend/DB:** [Supabase](https://supabase.com/)
+- **Integrations:** Slack Webhooks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Running Locally
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/shakeelscribes/Portfolio-Website.git
+   cd Portfolio-Website
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up Environment Variables:**
+   Rename `.env.local.example` to `.env.local` and add your keys:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   SLACK_WEBHOOK_URL=your_slack_webhook_url
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deploy on Vercel
+## 🤝 Contact
+- **LinkedIn:** [Mohamed Shakeel](https://linkedin.com/in/mohamed-shakeel-720b2a29b)
+- **GitHub:** [@shakeelscribes](https://github.com/shakeelscribes)
+- **Slack:** [Join my workspace](https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Designed & Built by Mohamed Shakeel*
