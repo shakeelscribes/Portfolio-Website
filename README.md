@@ -20,7 +20,7 @@
 
 A modern, highly interactive personal portfolio engineered to showcase technical depth. Built from the ground up utilizing a bespoke glassmorphism design system to emulate the sleek, precise feel of a modern terminal environment.
 
-> **[🚀 INITIALIZE LIVE DEMO](https://portfolio-website-shakeelscribes.vercel.app/)** *(Update with Vercel URL)*
+> **[🚀 INITIALIZE LIVE DEMO](https://shakeels-portfolio-cyan.vercel.app/)**
 
 ## ✨ System Features
 
@@ -63,7 +63,7 @@ Access the local port at [http://localhost:3000](http://localhost:3000).
 
 ## 📡 Transmission Channels
 
-<p>
+<p align="center">
   <a href="https://linkedin.com/in/mohamed-shakeel-720b2a29b">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
