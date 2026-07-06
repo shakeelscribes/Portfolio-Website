@@ -1,59 +1,74 @@
-# Mohamed Shakeel | Personal Portfolio
+<div align="center">
+  <br />
+  <h1>SHAKEEL.</h1>
+  <p>
+    <strong>AI/ML Engineer & Generative AI Developer</strong><br />
+    Building intelligent, scalable systems and intuitive web experiences.
+  </p>
+  <br />
+</div>
 
-A modern, highly interactive personal portfolio built from the ground up to showcase projects, skills, and professional experience.
+<br />
 
-![Portfolio Preview](./public/window.svg) <!-- Replace with an actual screenshot of the portfolio once deployed -->
+### ❖ ARCHITECTURE & AESTHETIC
 
-## 🚀 Live Demo
-**[View Live Portfolio](https://portfolio-website-shakeelscribes.vercel.app/)** *(Add your Vercel URL here once deployed)*
+A highly interactive personal portfolio built from the ground up, blending cutting-edge web technologies with a bespoke glassmorphism design system. Designed to emulate the sleek, precise feel of a modern terminal environment.
 
-## ✨ Features
-- **Next.js 14+ (App Router):** Fast, SEO-friendly, and optimized.
-- **Glassmorphism Design System:** Custom CSS variables for a sleek, modern, and translucent aesthetic.
-- **Fluid Typography:** Scales perfectly across all device sizes.
-- **Interactive Animations:** Uses Lenis for smooth scrolling, Framer Motion for scroll reveals, and highly customized CSS hover states.
-- **Terminal Stacking Cards:** Projects are presented in a unique, overlapping terminal-style UI.
-- **Direct Slack Integration:** Contact form submissions bypass email and are sent directly to a Slack workspace using webhooks.
-- **Supabase Backend:** Securely logs all incoming messages from the contact form.
+- **Framework:** Next.js 14+ (App Router, TypeScript)
+- **Styling:** Custom CSS with a fluid-responsive mathematical foundation
+- **Motion:** Lenis (Smooth Scrolling) & Custom CSS Transitions
+- **Database:** Supabase (PostgreSQL)
+- **Integrations:** Direct-to-Slack Webhook Pipeline
 
-## 🛠️ Tech Stack
-- **Framework:** [Next.js](https://nextjs.org/) (React)
-- **Styling:** Custom CSS, CSS Modules
-- **Animations:** [Framer Motion](https://www.framer.com/motion/), [Lenis](https://lenis.studiofreight.com/) (Smooth Scrolling)
-- **Backend/DB:** [Supabase](https://supabase.com/)
-- **Integrations:** Slack Webhooks
+<br />
 
-## 💻 Running Locally
+### ❖ CORE FEATURES
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/shakeelscribes/Portfolio-Website.git
-   cd Portfolio-Website
-   ```
+- **Glassmorphism UI:** Custom CSS variable injections for a translucent, deep-space aesthetic.
+- **Terminal Stacking Cards:** Projects presented in an overlapping, interactive console-style interface.
+- **Real-Time Communications:** Contact submissions bypass traditional email relays, securely routing directly into a dedicated Slack workspace via custom API routes.
+- **Fluid Typography:** Typography precisely scales across viewports without breaking layout integrity.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+<br />
 
-3. **Set up Environment Variables:**
-   Rename `.env.local.example` to `.env.local` and add your keys:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   SLACK_WEBHOOK_URL=your_slack_webhook_url
-   ```
+### ❖ DEPLOYMENT INSTRUCTIONS
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To initialize this environment locally:
 
-## 🤝 Contact
-- **LinkedIn:** [Mohamed Shakeel](https://linkedin.com/in/mohamed-shakeel-720b2a29b)
-- **GitHub:** [@shakeelscribes](https://github.com/shakeelscribes)
-- **Slack:** [Join my workspace](https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ)
+```bash
+# Clone the core repository
+git clone https://github.com/shakeelscribes/Portfolio-Website.git
+cd Portfolio-Website
 
----
-*Designed & Built by Mohamed Shakeel*
+# Install dependencies
+npm install
+
+# Initialize environment variables
+cp .env.local.example .env.local
+```
+
+Ensure `.env.local` is populated with your operational keys:
+```env
+NEXT_PUBLIC_SUPABASE_URL=[YOUR_SUPABASE_URL]
+NEXT_PUBLIC_SUPABASE_ANON_KEY=[YOUR_SUPABASE_ANON_KEY]
+SLACK_WEBHOOK_URL=[YOUR_SLACK_WEBHOOK_URL]
+```
+
+Boot the development server:
+```bash
+npm run dev
+```
+
+<br />
+
+### ❖ COMMUNICATION CHANNELS
+
+- **[LinkedIn Network](https://linkedin.com/in/mohamed-shakeel-720b2a29b)**
+- **[GitHub Repositories](https://github.com/shakeelscribes)**
+- **[Slack Workspace](https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ)**
+
+<br />
+
+<div align="center">
+  <small>© 2026 Mohamed Shakeel. All systems operational.</small>
+</div>
