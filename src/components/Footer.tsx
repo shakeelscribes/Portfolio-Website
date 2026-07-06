@@ -20,7 +20,7 @@ const footerLinks = {
     { label: "GitHub", href: "https://github.com/shakeelscribes" },
     { label: "Slack", href: "https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ" },
     { label: "Instagram", href: "https://instagram.com/shakeelscribes" },
-    { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com" },
+    { label: "Email", href: "mailto:ahamedshakeel2005@gmail.com", isEmail: true },
   ],
 };
 
@@ -95,9 +95,16 @@ export default function Footer() {
               </a>
               {/* Email */}
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:ahamedshakeel2005@gmail.com"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                  if (isMobile) {
+                    window.location.href = "mailto:ahamedshakeel2005@gmail.com";
+                  } else {
+                    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com", "_blank");
+                  }
+                }}
                 className="social-icon"
                 aria-label="Email"
               >
@@ -164,8 +171,19 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      target={link.href.startsWith("http") ? "_blank" : undefined}
-                      rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      target={link.href.startsWith("http") && !(link as any).isEmail ? "_blank" : undefined}
+                      rel={link.href.startsWith("http") && !(link as any).isEmail ? "noopener noreferrer" : undefined}
+                      onClick={(e) => {
+                        if ((link as any).isEmail) {
+                          e.preventDefault();
+                          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                          if (isMobile) {
+                            window.location.href = "mailto:ahamedshakeel2005@gmail.com";
+                          } else {
+                            window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com", "_blank");
+                          }
+                        }
+                      }}
                       style={{
                         fontSize: "0.8125em",
                         color: "var(--text-muted)",

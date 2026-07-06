@@ -8,7 +8,8 @@ const contactLinks = [
   {
     label: "Email",
     value: "ahamedshakeel2005@gmail.com",
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com",
+    href: "mailto:ahamedshakeel2005@gmail.com",
+    isEmail: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -190,8 +191,19 @@ export default function Contact() {
               <a
                 key={link.label}
                 href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                target={link.href.startsWith("http") && !(link as any).isEmail ? "_blank" : undefined}
+                rel={link.href.startsWith("http") && !(link as any).isEmail ? "noopener noreferrer" : undefined}
+                onClick={(e) => {
+                  if ((link as any).isEmail) {
+                    e.preventDefault();
+                    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                    if (isMobile) {
+                      window.location.href = "mailto:ahamedshakeel2005@gmail.com";
+                    } else {
+                      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ahamedshakeel2005@gmail.com", "_blank");
+                    }
+                  }
+                }}
                 className="card"
                 style={{
                   display: "flex",
