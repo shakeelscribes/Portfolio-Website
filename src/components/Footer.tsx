@@ -18,6 +18,7 @@ const footerLinks = {
   "Socials": [
     { label: "LinkedIn", href: "https://linkedin.com/in/mohamed-shakeel-720b2a29b" },
     { label: "GitHub", href: "https://github.com/shakeelscribes" },
+    { label: "Slack", href: "https://join.slack.com/t/shakeelscob/shared_invite/zt-4322dkwtt-IYvOwUdR5A5dtUzFwD6xhQ" },
     { label: "Instagram", href: "https://instagram.com/shakeelscribes" },
     { label: "Email", href: "mailto:ahamedshakeel2005@gmail.com" },
   ],
