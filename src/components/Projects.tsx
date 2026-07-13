@@ -19,7 +19,7 @@ const projects = [
       "Built with Node.js, Redis Queue, Docker, and Bot Mitigation strategies to demonstrate a robust architecture for extreme, bursty traffic.",
     tech: ["Node.js", "Redis", "Docker", "Architecture", "Bot Mitigation"],
     link: "https://github.com/shakeelscribes/anna-univ-clone",
-    color: "#0a192f",
+    color: "#131620",
   },
   {
     title: "CardioGuard",

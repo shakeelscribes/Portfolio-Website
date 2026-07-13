@@ -10,10 +10,11 @@ const footerLinks = {
     { label: "Experience", href: "#experience" },
   ],
   "Projects": [
-    { label: "CardioGuard", href: "https://cardioguard-website.vercel.app/" },
+    { label: "Anna University Clone", href: "#projects" },
+    { label: "CardioGuard", href: "#projects" },
     { label: "CineSync", href: "#projects" },
     { label: "BriefMind", href: "#projects" },
-    { label: "Anna University Clone", href: "https://github.com/shakeelscribes/anna-univ-clone" },
+    { label: "LexAI", href: "#projects" },
   ],
   "Socials": [
     { label: "LinkedIn", href: "https://linkedin.com/in/mohamed-shakeel-720b2a29b" },
