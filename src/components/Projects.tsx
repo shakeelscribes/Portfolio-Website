@@ -139,6 +139,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
+              id={`project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
               className="stack-card terminal-window"
               style={{
                 top: `calc(5vh + ${index * 20}px)`, // Sticky top position offset by index so headers peek

@@ -10,11 +10,11 @@ const footerLinks = {
     { label: "Experience", href: "#experience" },
   ],
   "Projects": [
-    { label: "Anna University Clone", href: "#projects" },
-    { label: "CardioGuard", href: "#projects" },
-    { label: "CineSync", href: "#projects" },
-    { label: "BriefMind", href: "#projects" },
-    { label: "LexAI", href: "#projects" },
+    { label: "Anna University Clone", href: "#project-anna-university-clone" },
+    { label: "CardioGuard", href: "#project-cardioguard" },
+    { label: "CineSync", href: "#project-cinesync" },
+    { label: "BriefMind", href: "#project-briefmind" },
+    { label: "LexAI", href: "#project-lexai" },
   ],
   "Socials": [
     { label: "LinkedIn", href: "https://linkedin.com/in/mohamed-shakeel-720b2a29b" },
