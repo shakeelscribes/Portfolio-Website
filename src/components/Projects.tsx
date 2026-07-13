@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
   {
-    title: "AnnaUniv Queue PoC",
+    title: "Anna University Clone",
     cmd: "./run-anna-univ-queue.sh",
     role: "System Architect",
     year: "2026",
