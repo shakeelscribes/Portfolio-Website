@@ -54,7 +54,6 @@ const projects = [
     details:
       "Implemented multi-turn conversation memory, streaming responses, and automatic rate-limit retry logic. Deployed live on Streamlit Cloud.",
     tech: ["Streamlit", "Groq API", "LLAMA 3.3", "Python", "NLP"],
-    link: "https://legal-assistant-fromshakeel.streamlit.app",
     color: "#131620",
   },
 ];

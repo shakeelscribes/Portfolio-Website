@@ -13,7 +13,7 @@ const footerLinks = {
     { label: "CardioGuard", href: "https://cardioguard-website.vercel.app/" },
     { label: "CineSync", href: "#projects" },
     { label: "BriefMind", href: "#projects" },
-    { label: "LexAI", href: "https://legal-assistant-fromshakeel.streamlit.app" },
+    { label: "LexAI", href: "#projects" },
   ],
   "Socials": [
     { label: "LinkedIn", href: "https://linkedin.com/in/mohamed-shakeel-720b2a29b" },
