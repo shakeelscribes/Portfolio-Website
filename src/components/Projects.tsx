@@ -8,6 +8,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
   {
+    title: "AnnaUniv Queue PoC",
+    cmd: "./run-anna-univ-queue.sh",
+    role: "System Architect",
+    year: "2026",
+    isActive: true,
+    description:
+      "A highly scalable, queue-based architecture proof-of-concept designed to solve Anna University's 'Results Day' server crashes.",
+    details:
+      "Built with Node.js, Redis Queue, Docker, and Bot Mitigation strategies to demonstrate a robust architecture for extreme, bursty traffic.",
+    tech: ["Node.js", "Redis", "Docker", "Architecture", "Bot Mitigation"],
+    link: "https://github.com/shakeelscribes/anna-univ-clone",
+    color: "#0a192f",
+  },
+  {
     title: "CardioGuard",
     cmd: "./run-cardioguard.sh",
     role: "Team Lead / AI Engineer",
@@ -156,8 +170,14 @@ export default function Projects() {
 
                 {/* Friendly Output */}
                 <div className="command-output">
-                  <div className="output-row title-row">
-                    <span className="bullet">[+]</span> <span className="label">Project:</span> <span className="value highlight">{project.title}</span>
+                  <div className="output-row title-row" style={{ display: "flex", alignItems: "center", gap: "1em", flexWrap: "wrap" }}>
+                    <div><span className="bullet">[+]</span> <span className="label">Project:</span> <span className="value highlight">{project.title}</span></div>
+                    {(project as any).isActive && (
+                      <span className="active-badge">
+                        <span className="pulse-dot"></span>
+                        Active Protocol
+                      </span>
+                    )}
                   </div>
                   
                   <div className="output-row">
@@ -362,6 +382,36 @@ export default function Projects() {
           
           .cursor.blinking {
             animation: blink 1s step-end infinite;
+          }
+
+          .active-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 10px;
+            font-size: 0.65em;
+            background-color: rgba(39, 201, 63, 0.15);
+            color: #27c93f;
+            border: 1px solid rgba(39, 201, 63, 0.3);
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+          }
+
+          .pulse-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #27c93f;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #27c93f;
+            animation: pulse-glow 2s infinite;
+          }
+
+          @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.4); }
+            70% { box-shadow: 0 0 0 6px rgba(39, 201, 63, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(39, 201, 63, 0); }
           }
 
           @keyframes blink {
